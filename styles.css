@@ -275,7 +275,7 @@ h3 {
 .portrait-frame {
   margin: 0;
   justify-self: end;
-  width: min(100%, 320px);
+  width: min(100%, 240px);
 }
 
 .portrait-frame img {
@@ -372,7 +372,7 @@ h3 {
   border-left: 1px solid var(--line);
 }
 
-.timeline li {
+.timeline > li {
   position: relative;
   display: grid;
   grid-template-columns: minmax(135px, 0.28fr) minmax(0, 1fr);
@@ -380,11 +380,11 @@ h3 {
   padding: 0 0 2rem 1.5rem;
 }
 
-.timeline li:last-child {
+.timeline > li:last-child {
   padding-bottom: 0;
 }
 
-.timeline li::before {
+.timeline > li::before {
   content: "";
   position: absolute;
   top: 0.45rem;
@@ -610,7 +610,7 @@ h3 {
   .portrait-frame {
     order: -1;
     justify-self: start;
-    width: min(100%, 168px);
+    width: min(100%, 132px);
   }
 
   .section-grid {
@@ -656,7 +656,7 @@ h3 {
 
   .education-item,
   .publication,
-  .timeline li,
+  .timeline > li,
   .award-list li {
     grid-template-columns: 1fr;
     gap: 0.5rem;
