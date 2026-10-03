@@ -1,7 +1,395 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Zhuorui (Timothy) Zhao</h1>
-<p>I'm currently a senior in Beijing Institute of Technology. I major in Electrical Engineering. I'm interested in X</p>
-</body>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>赵卓睿 Zhuorui Zhao | EDA · LLM Agents · Hardware Design</title>
+    <meta
+      name="description"
+      content="赵卓睿，慕尼黑工业大学 EDA 实验室博士在读，研究 LLM、LLM Agent 及其在硬件电路设计与验证中的应用。"
+    />
+    <meta name="theme-color" content="#0f766e" />
+    <meta property="og:title" content="赵卓睿 Zhuorui Zhao" />
+    <meta
+      property="og:description"
+      content="LLM Agents · AI for Hardware Design · Verilog Generation · EDA"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/portrait.jpg" />
+    <link rel="icon" href="assets/portrait.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="返回顶部">
+          <span class="brand-mark">ZZ</span>
+          <span class="brand-name">Zhuorui Zhao</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <i data-lucide="menu" aria-hidden="true"></i>
+          <span class="sr-only">打开导航</span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="主导航">
+          <a href="#about">简介</a>
+          <a href="#education">教育</a>
+          <a href="#research">研究</a>
+          <a href="#publications">论文</a>
+          <a href="#awards">获奖</a>
+          <a href="#contact">联系</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">PhD Candidate · Technical University of Munich</p>
+            <h1>赵卓睿<br /><span>Zhuorui Zhao</span></h1>
+            <p class="hero-summary">
+              慕尼黑工业大学 EDA 实验室博士在读。研究兴趣集中在
+              <strong>LLM</strong>、<strong>LLM Agent</strong> 以及
+              <strong>AI for Hardware Design (RTL)</strong>，包括 Verilog
+              代码生成、系统级验证与硬件加速。
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="assets/Zhuorui_Zhao_CV.pdf" target="_blank" rel="noreferrer">
+                <i data-lucide="file-text" aria-hidden="true"></i>
+                下载简历
+              </a>
+              <a class="button ghost" href="https://github.com/TimrayZ" target="_blank" rel="noreferrer">
+                <i data-lucide="github" aria-hidden="true"></i>
+                GitHub
+              </a>
+            </div>
+            <ul class="hero-tags" aria-label="研究方向">
+              <li>LLM Agents</li>
+              <li>Verilog Generation</li>
+              <li>Hardware Verification</li>
+              <li>EDA</li>
+            </ul>
+          </div>
+          <figure class="portrait-frame">
+            <img src="assets/portrait.jpg" alt="赵卓睿证件照" width="1050" height="1350" />
+            <figcaption>Munich · EDA Lab</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-band" id="about">
+        <div class="container section-grid">
+          <div>
+            <p class="section-kicker">About</p>
+            <h2>学术与工程并重</h2>
+          </div>
+          <div class="section-copy reveal">
+            <p>
+              我目前在慕尼黑工业大学 EDA 实验室攻读博士，导师为 Ulf Schlichtmann
+              教授。研究围绕大语言模型在硬件设计自动化中的应用展开，目标是提升
+              RTL 代码生成与系统级验证的可靠性。
+            </p>
+            <p>
+              此前在圣母大学计算机科学与技术系从事研究，导师为史弋宇教授，方向包括
+              神经网络架构搜索加速、FPGA 部署与对比学习；也在寒武纪、清华大学微纳电子系
+              参与过 AI 芯片与 CGRA 内存系统相关工作。
+            </p>
+            <dl class="quick-facts">
+              <div>
+                <dt>当前</dt>
+                <dd>TUM EDA Lab · 博士在读</dd>
+              </div>
+              <div>
+                <dt>方向</dt>
+                <dd>LLM / Agent / RTL 设计自动化</dd>
+              </div>
+              <div>
+                <dt>地点</dt>
+                <dd>慕尼黑，德国</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band muted" id="education">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Education</p>
+            <h2>教育背景</h2>
+          </div>
+          <div class="education-list reveal">
+            <article class="education-item">
+              <div class="education-meta">
+                <span class="date">2022.03 – 至今</span>
+                <span class="place">德国 · 慕尼黑</span>
+              </div>
+              <div class="education-main">
+                <h3>慕尼黑工业大学</h3>
+                <p>计算机工程 · 博士在读</p>
+                <p class="detail">导师：Ulf Schlichtmann 教授</p>
+              </div>
+            </article>
+            <article class="education-item">
+              <div class="education-meta">
+                <span class="date">2020.09 – 2022.01</span>
+                <span class="place">美国 · 印第安纳</span>
+              </div>
+              <div class="education-main">
+                <h3>圣母大学</h3>
+                <p>计算机科学与工程 · 理学硕士</p>
+                <p class="detail">GPA 3.90/4.0 · 导师：史弋宇教授</p>
+              </div>
+            </article>
+            <article class="education-item">
+              <div class="education-meta">
+                <span class="date">2016.09 – 2020.06</span>
+                <span class="place">中国 · 北京</span>
+              </div>
+              <div class="education-main">
+                <h3>北京理工大学</h3>
+                <p>电子信息工程 · 工学学士</p>
+                <p class="detail">GPA 3.70/4.0（平均分 88.6/100）· 获得保研资格</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band" id="research">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Research & Experience</p>
+            <h2>研究与工程经历</h2>
+          </div>
+          <ol class="timeline reveal">
+            <li>
+              <div class="timeline-date">2022.03 – 至今</div>
+              <div class="timeline-body">
+                <h3>慕尼黑工业大学 EDA 实验室</h3>
+                <p class="role">研究助理 · 在读博士生</p>
+                <ul>
+                  <li>开发面向电路辅助设计的 LLM Agent，利用自一致性机制在无需微调的情况下提升硬件代码生成正确率，平均达到 10.6%。</li>
+                  <li>提出聚焦推理方法，缓解 LLM 在长上下文硬件生成任务中的错误累积问题。</li>
+                  <li>针对设计规格不完备问题，提出新的数据集与语言模型干预框架，在语义模糊场景下取得 12.7–13.7% 精度提升。</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-date">2019.07 – 2022.01</div>
+              <div class="timeline-body">
+                <h3>圣母大学 计算机科学与技术系</h3>
+                <p class="role">研究助理（史弋宇教授）</p>
+                <ul>
+                  <li>利用迁移学习加速神经网络架构搜索（NAS），达成约 3 倍速度提升，并探索强化学习 NAS 在二元神经网络上的应用。</li>
+                  <li>与 EdgeCortix 合作，使用 Vitis HLS 和 Python 在 FPGA 上实现 MobileNet 加速，通过 pipelining 与减少存储次数提升性能。</li>
+                  <li>开发基于对比学习的 RGB-D 图像分类网络，在 SUN-RGBD 和 Washington RGB-D 数据集上达到 SoTA 性能。</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-date">2019.08 – 2019.10</div>
+              <div class="timeline-body">
+                <h3>寒武纪科技 软件部</h3>
+                <p class="role">实习生</p>
+                <ul>
+                  <li>在 AI 芯片 MLU100 上部署 ResNet-50 / Inception-v3，使用 BangC 实现向量运算。</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-date">2019.05 – 2019.08</div>
+              <div class="timeline-body">
+                <h3>北京理工大学 信息与电子学院</h3>
+                <p class="role">本科实习生（丁志杰副教授）</p>
+                <ul>
+                  <li>与队友开发基于 FPGA 的卷积神经网络车牌识别系统，主要负责神经网络训练与架构搜索，获 ARM 杯全国二等奖。</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-date">2018.08 – 2019.07</div>
+              <div class="timeline-body">
+                <h3>清华大学 微纳电子系</h3>
+                <p class="role">研究助理（尹首一教授）</p>
+                <ul>
+                  <li>协助设计 CGRA RPU 缓存系统的内存访问方法并修复关键错误，构建 UART / APB 接口。</li>
+                  <li>提出用于 RPU 的 NoC 交换内存系统方案，内存带宽提升约 10 倍。</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section-band muted" id="publications">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Selected Papers</p>
+            <h2>代表性论文</h2>
+          </div>
+          <ol class="publication-list reveal">
+            <li class="publication">
+              <div class="pub-venue">ISQED 2025</div>
+              <div>
+                <h3>
+                  <a href="https://arxiv.org/abs/2502.00028" target="_blank" rel="noreferrer">
+                    VRank: Enhancing Verilog Code Generation from Large Language Models via Self-Consistency
+                  </a>
+                </h3>
+                <p class="pub-authors">Zhuorui Zhao, Ruidi Qiu, Ing-Chao Lin, Grace Li Zhang, Bing Li, Ulf Schlichtmann</p>
+                <p class="pub-note">最佳论文奖 · Best Paper Award</p>
+              </div>
+            </li>
+            <li class="publication">
+              <div class="pub-venue">SOCC 2025</div>
+              <div>
+                <h3>
+                  <a href="https://arxiv.org/abs/2511.02285" target="_blank" rel="noreferrer">
+                    VFocus: Better Verilog Generation from Large Language Model via Focused Reasoning
+                  </a>
+                </h3>
+                <p class="pub-authors">Zhuorui Zhao, Bing Li, Grace Li Zhang, Ulf Schlichtmann</p>
+              </div>
+            </li>
+            <li class="publication">
+              <div class="pub-venue">DAC 2026</div>
+              <div>
+                <h3>
+                  <a
+                    href="https://63dac.conference-program.com/?post_type=page&p=16&id=RESEARCH1858&sess=sess166"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    ReflectBench: An Agentic Framework for Generating System-Level Design Testbench via Consensus and Reflection
+                  </a>
+                </h3>
+                <p class="pub-authors">Junzhe Liu, Chao Li, Puyuan Zhang, Jinheng Wang, Xiaowei Chen, Zhuorui Zhao, et al.</p>
+                <p class="pub-note">已录用 · Accepted</p>
+              </div>
+            </li>
+            <li class="publication">
+              <div class="pub-venue">arXiv 2026</div>
+              <div>
+                <h3>
+                  <a href="https://arxiv.org/abs/2607.24854" target="_blank" rel="noreferrer">
+                    VClare: Resolving Imperfect Specifications in LLM-Based Verilog Generation
+                  </a>
+                </h3>
+                <p class="pub-authors">Zhuorui Zhao, Bing Li, Yu Li, Zheyu Yan, Ulf Schlichtmann</p>
+                <p class="pub-note">在投 · Under Submission</p>
+              </div>
+            </li>
+            <li class="publication">
+              <div class="pub-venue">SOCC 2025</div>
+              <div>
+                <h3>
+                  <a href="https://arxiv.org/abs/2508.20030" target="_blank" rel="noreferrer">
+                    Large Language Models (LLMs) for Electronic Design Automation (EDA): Special Session Paper
+                  </a>
+                </h3>
+                <p class="pub-authors">Kangwei Xu, Denis Schwachhofer, Jason Blocklove, Ilia Polian, Peter Domanski, Dirk Pflüger, Siddharth Garg, Ramesh Karri, Ozgur Sinanoglu, Johann Knechtel, Zhuorui Zhao, Ulf Schlichtmann, Bing Li</p>
+              </div>
+            </li>
+            <li class="publication">
+              <div class="pub-venue">arXiv 2024</div>
+              <div>
+                <h3>
+                  <a href="https://arxiv.org/abs/2410.18582" target="_blank" rel="noreferrer">
+                    LLM-Aided Efficient Hardware Design Automation
+                  </a>
+                </h3>
+                <p class="pub-authors">Kangwei Xu, Ruidi Qiu, Zhuorui Zhao, Grace Li Zhang, Bing Li, Ulf Schlichtmann</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section-band" id="awards">
+        <div class="container section-grid">
+          <div>
+            <p class="section-kicker">Selected Awards</p>
+            <h2>代表性获奖</h2>
+          </div>
+          <ul class="award-list reveal">
+            <li><span>2025</span> ISQED 最佳论文奖（Top 1% of submissions）</li>
+            <li><span>2020</span> 北京理工大学优秀毕业生、北京市优秀毕业生</li>
+            <li><span>2019</span> ARM 杯全国二等奖，全国大学生集成电路创新创业大赛</li>
+            <li><span>2019</span> 全国大学生集成电路创新创业大赛华北赛区二等奖</li>
+            <li><span>2017</span> 全国大学生数学建模竞赛北京赛区甲组北京市一等奖（高教社杯）</li>
+            <li><span>2017–2019</span> 多次获北京理工大学本科生优秀学生奖一等、二等奖学金</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-band muted" id="skills">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Skills</p>
+            <h2>技能与语言</h2>
+          </div>
+          <div class="skills-grid reveal">
+            <div>
+              <h3>编程与工具</h3>
+              <p>Python · C · C++ · MATLAB · Verilog · Vitis HLS · Vivado · LLM / Agent 开发</p>
+            </div>
+            <div>
+              <h3>语言能力</h3>
+              <p>CET-4 649（口语 A）· CET-6 609（口语 A）· TOEFL 110 · GRE 325</p>
+            </div>
+            <div>
+              <h3>组织与兴趣</h3>
+              <p>曾任班长、合唱团男高声部负责人；有钢琴演奏与编曲经历。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band contact-band" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2>欢迎交流与合作</h2>
+            <p class="contact-copy">
+              欢迎围绕 LLM Agent、Verilog 生成、硬件验证与 EDA 自动化交流。
+            </p>
+          </div>
+          <ul class="contact-list">
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+              <a href="mailto:zzr997@hotmail.com">zzr997@hotmail.com</a>
+            </li>
+            <li>
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              <span>微信：TimRayZhao</span>
+            </li>
+            <li>
+              <i data-lucide="github" aria-hidden="true"></i>
+              <a href="https://github.com/TimrayZ" target="_blank" rel="noreferrer">github.com/TimrayZ</a>
+            </li>
+          </ul>
+          <div class="contact-actions">
+            <a class="button primary" href="assets/Zhuorui_Zhao_CV.pdf" target="_blank" rel="noreferrer">
+              <i data-lucide="file-text" aria-hidden="true"></i>
+              2 页简历
+            </a>
+            <a class="button ghost" href="assets/Zhuorui_Zhao_CV_1page.pdf" target="_blank" rel="noreferrer">
+              <i data-lucide="file" aria-hidden="true"></i>
+              1 页简历
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Zhuorui Zhao</p>
+        <p>Built for GitHub Pages</p>
+      </div>
+    </footer>
+  </body>
 </html>
