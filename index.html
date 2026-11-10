@@ -17,6 +17,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/portrait.jpg" />
     <link rel="icon" href="assets/portrait.jpg" />
+    <link rel="alternate" hreflang="zh-CN" href="index.html" />
+    <link rel="alternate" hreflang="en" href="en.html" />
     <link rel="stylesheet" href="styles.css" />
     <script src="assets/lucide.min.js" defer></script>
     <script src="script.js" defer></script>
@@ -28,11 +30,13 @@
           <span class="brand-mark">ZZ</span>
           <span class="brand-name">Zhuorui Zhao</span>
         </a>
+        <a class="language-link" href="en.html" lang="en" hreflang="en" aria-label="View English version">EN</a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
           <i data-lucide="menu" aria-hidden="true"></i>
           <span class="sr-only">打开导航</span>
         </button>
         <nav id="site-nav" class="site-nav" aria-label="主导航">
+          <a href="#highlights">成果</a>
           <a href="#about">简介</a>
           <a href="#education">教育</a>
           <a href="#research">研究</a>
@@ -55,10 +59,17 @@
               <strong>AI for Hardware Design (RTL)</strong>，包括 Verilog
               代码生成、系统级验证与硬件加速。
             </p>
+            <p class="hero-award">
+              <a href="#vrank"><i data-lucide="award" aria-hidden="true"></i> ISQED 2025 · 最佳论文奖</a>
+            </p>
             <div class="hero-actions">
-              <a class="button primary" href="assets/Zhuorui_Zhao_CV.pdf" target="_blank" rel="noreferrer">
+              <a class="button primary" href="assets/Zhuorui_Zhao_CV_1page.pdf" target="_blank" rel="noreferrer">
                 <i data-lucide="file-text" aria-hidden="true"></i>
-                下载简历
+                1 页简历
+              </a>
+              <a class="button ghost" href="assets/Zhuorui_Zhao_CV.pdf" target="_blank" rel="noreferrer">
+                <i data-lucide="file-text" aria-hidden="true"></i>
+                2 页简历
               </a>
               <a class="button ghost" href="https://github.com/TimrayZ" target="_blank" rel="noreferrer">
                 <i data-lucide="github" aria-hidden="true"></i>
@@ -76,6 +87,38 @@
             <img src="assets/portrait.jpg" alt="赵卓睿证件照" width="1050" height="1350" />
             <figcaption>Munich · EDA Lab</figcaption>
           </figure>
+        </div>
+      </section>
+
+      <section class="section-band muted" id="highlights">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Research Highlights</p>
+            <h2>代表性研究成果</h2>
+          </div>
+          <ul class="publication-list">
+            <li class="publication" id="vrank">
+              <div class="pub-venue">ISQED 2025</div>
+              <div>
+                <h3><a href="https://arxiv.org/abs/2502.00028" target="_blank" rel="noreferrer">VRank</a></h3>
+                <p class="project-summary">用自一致性对仿真结果进行聚类和排序，筛选 Verilog 候选代码。在 VerilogEval-Human 上，多个模型的功能正确率（pass@1）平均提升 10.5%。</p>
+              </div>
+            </li>
+            <li class="publication" id="vfocus">
+              <div class="pub-venue">SOCC 2025</div>
+              <div>
+                <h3><a href="https://arxiv.org/abs/2511.02285" target="_blank" rel="noreferrer">VFocus</a></h3>
+                <p class="project-summary">用候选过滤、仿真排序和针对不一致行为的推理修正代码，在 VerilogEval-Human 上提高多个推理模型的 pass@1。</p>
+              </div>
+            </li>
+            <li class="publication" id="vclare">
+              <div class="pub-venue">NeurIPS Workshop 2026</div>
+              <div>
+                <h3><a href="https://arxiv.org/abs/2607.24854" target="_blank" rel="noreferrer">VClare</a></h3>
+                <p class="project-summary">结合规格修复与仿真分析处理不完善的设计需求。论文报告单模块和多模块任务的 Verilog 设计通过率分别提升 12.7% 和 13.7%。</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -171,9 +214,9 @@
                 <h3>慕尼黑工业大学 EDA 实验室</h3>
                 <p class="role">研究助理 · 在读博士生</p>
                 <ul>
-                  <li>开发面向电路辅助设计的 LLM Agent，利用自一致性机制在无需微调的情况下提升硬件代码生成正确率，平均达到 10.6%。</li>
+                  <li>开发 VRank，通过仿真结果的自一致性筛选 Verilog 候选代码，在 VerilogEval-Human 上平均提升功能正确率（pass@1）10.5%。</li>
                   <li>提出聚焦推理方法，缓解 LLM 在长上下文硬件生成任务中的错误累积问题。</li>
-                  <li>针对设计规格不完备问题，提出新的数据集与语言模型干预框架，在语义模糊场景下取得 12.7–13.7% 精度提升。</li>
+                  <li>针对设计规格不完备问题，提出新的数据集与语言模型干预框架，在单模块和多模块任务中分别将 Verilog 设计通过率提升 12.7% 和 13.7%。</li>
                 </ul>
               </div>
             </li>

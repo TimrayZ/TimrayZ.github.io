@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zhuorui Zhao | EDA · LLM Agents · Hardware Design</title>
+    <meta
+      name="description"
+      content="Zhuorui Zhao, PhD candidate at TUM working on LLM agents for RTL design, Verilog generation, and hardware verification."
+    />
+    <meta name="theme-color" content="#0f766e" />
+    <meta property="og:title" content="Zhuorui Zhao" />
+    <meta
+      property="og:description"
+      content="LLM Agents · AI for Hardware Design · Verilog Generation · EDA"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/portrait.jpg" />
+    <link rel="icon" href="assets/portrait.jpg" />
+    <link rel="alternate" hreflang="zh-CN" href="index.html" />
+    <link rel="alternate" hreflang="en" href="en.html" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="assets/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Back to top">
+          <span class="brand-mark">ZZ</span>
+          <span class="brand-name">Zhuorui Zhao</span>
+        </a>
+        <a class="language-link" href="index.html" lang="zh-CN" hreflang="zh-CN" aria-label="Chinese version">中文</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <i data-lucide="menu" aria-hidden="true"></i>
+          <span class="sr-only">Open navigation</span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="#highlights">Highlights</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#research">Experience</a>
+          <a href="#publications">Papers</a>
+          <a href="#awards">Awards</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">PhD Candidate · Technical University of Munich</p>
+            <h1>Zhuorui Zhao</h1>
+            <p class="hero-summary">
+              I am a PhD candidate in the TUM EDA Lab. I build <strong>LLM agents for RTL design and verification</strong>, with a focus on Verilog generation, system-level testbenches, and hardware acceleration.
+            </p>
+            <p class="hero-award">
+              <a href="#vrank"><i data-lucide="award" aria-hidden="true"></i> ISQED 2025 · Best Paper Award</a>
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="assets/Zhuorui_Zhao_CV_EN.pdf" target="_blank" rel="noreferrer">
+                <i data-lucide="file-text" aria-hidden="true"></i>
+                2-page CV (English)
+              </a>
+              <a class="button ghost" href="assets/Zhuorui_Zhao_CV_1page.pdf" target="_blank" rel="noreferrer">
+                <i data-lucide="file-text" aria-hidden="true"></i>
+                1-page CV (Chinese)
+              </a>
+              <a class="button ghost" href="https://github.com/TimrayZ" target="_blank" rel="noreferrer">
+                <i data-lucide="github" aria-hidden="true"></i>
+                GitHub
+              </a>
+            </div>
+            <ul class="hero-tags" aria-label="Research interests">
+              <li>LLM Agents</li>
+              <li>Verilog Generation</li>
+              <li>Hardware Verification</li>
+              <li>EDA</li>
+            </ul>
+          </div>
+          <figure class="portrait-frame">
+            <img src="assets/portrait.jpg" alt="Portrait of Zhuorui Zhao" width="1050" height="1350" />
+            <figcaption>Munich · EDA Lab</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-band muted" id="highlights">
+        <div class="container">
+          <div class="section-head">
+            <h2>Research highlights</h2>
+          </div>
+          <ul class="publication-list">
+            <li class="publication" id="vrank">
+              <div class="pub-venue">ISQED 2025</div>
+              <div>
+                <h3><a href="https://arxiv.org/abs/2502.00028" target="_blank" rel="noreferrer">VRank</a></h3>
+                <p class="project-summary">Ranks Verilog candidates by clustering their simulation outputs. Improved functional correctness (pass@1) by 10.5% on average across models on VerilogEval-Human.</p>
+              </div>
+            </li>
+            <li class="publication" id="vfocus">
+              <div class="pub-venue">SOCC 2025</div>
+              <div>
+                <h3><a href="https://arxiv.org/abs/2511.02285" target="_blank" rel="noreferrer">VFocus</a></h3>
+                <p class="project-summary">Filters candidates, ranks them by simulation, and uses focused reasoning to resolve inconsistent behavior. Improved pass@1 across multiple reasoning models on VerilogEval-Human.</p>
+              </div>
+            </li>
+            <li class="publication" id="vclare">
+              <div class="pub-venue">NeurIPS Workshop 2026</div>
+              <div>
+                <h3><a href="https://arxiv.org/abs/2607.24854" target="_blank" rel="noreferrer">VClare</a></h3>
+                <p class="project-summary">Repairs imperfect design specifications using text analysis and simulation. The paper reports Verilog design pass-rate gains of 12.7% on single-module tasks and 13.7% on multi-module tasks.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-band" id="about">
+        <div class="container section-grid">
+          <div>
+            <h2>Research and engineering</h2>
+          </div>
+          <div class="section-copy reveal">
+            <p>
+              I work with Prof. Ulf Schlichtmann at the Technical University of Munich. My research uses large language models to make RTL code generation and system-level verification more reliable.
+            </p>
+            <p>
+              Previously, I worked with Prof. Yiyu Shi at the University of Notre Dame on neural architecture search, FPGA deployment, and contrastive learning. I also worked on AI chip deployment at Cambricon and CGRA memory systems at Tsinghua University.
+            </p>
+            <dl class="quick-facts">
+              <div>
+                <dt>Current</dt>
+                <dd>TUM EDA Lab · PhD candidate</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>LLM agents and RTL design automation</dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Munich, Germany</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band muted" id="education">
+        <div class="container">
+          <div class="section-head">
+            <h2>Education</h2>
+          </div>
+          <div class="education-list reveal">
+            <article class="education-item">
+              <div class="education-meta">
+                <span class="date">2022.03 – Present</span>
+                <span class="place">Munich, Germany</span>
+              </div>
+              <div class="education-main">
+                <h3>Technical University of Munich</h3>
+                <p>PhD candidate in Computer Engineering</p>
+                <p class="detail">Advisor: Prof. Ulf Schlichtmann</p>
+              </div>
+            </article>
+            <article class="education-item">
+              <div class="education-meta">
+                <span class="date">2020.09 – 2022.01</span>
+                <span class="place">Indiana, USA</span>
+              </div>
+              <div class="education-main">
+                <h3>University of Notre Dame</h3>
+                <p>M.S. in Computer Science and Engineering</p>
+                <p class="detail">GPA 3.90/4.0 · Advisor: Prof. Yiyu Shi</p>
+              </div>
+            </article>
+            <article class="education-item">
+              <div class="education-meta">
+                <span class="date">2016.09 – 2020.06</span>
+                <span class="place">Beijing, China</span>
+              </div>
+              <div class="education-main">
+                <h3>Beijing Institute of Technology</h3>
+                <p>B.Eng. in Electronic Information Engineering</p>
+                <p class="detail">GPA 3.70/4.0 (average grade: 88.6/100) · Eligible for graduate admission without the national entrance exam</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band" id="research">
+        <div class="container">
+          <div class="section-head">
+            <h2>Research and engineering experience</h2>
+          </div>
+          <ol class="timeline reveal">
+            <li>
+              <div class="timeline-date">2022.03 – Present</div>
+              <div class="timeline-body">
+                <h3>EDA Lab, Technical University of Munich</h3>
+                <p class="role">Research Assistant · PhD Candidate</p>
+                <ul>
+                  <li>Developed VRank, which ranks Verilog candidates by simulation agreement and improves functional correctness (pass@1) by 10.5% on average on VerilogEval-Human.</li>
+                  <li>Developed VFocus, which uses focused reasoning to identify and resolve inconsistencies among Verilog candidates.</li>
+                  <li>Developed VClare and two benchmarks for imperfect design specifications. VClare improved Verilog design pass rates by 12.7% on single-module tasks and 13.7% on multi-module tasks.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-date">2025.10 – 2026.03</div>
+              <div class="timeline-body">
+                <h3>Prof. Cheng Zhuo’s Lab, Zhejiang University</h3>
+                <p class="role">Visiting Student</p>
+                <ul>
+                  <li>Combined VRank with testbench generation to improve the accuracy of expected test-case outputs.</li>
+                  <li>Contributed to ReflectBench with collaborators from Shandong University.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-date">2019.07 – 2022.01</div>
+              <div class="timeline-body">
+                <h3>Computer Science and Engineering, University of Notre Dame</h3>
+                <p class="role">Research Assistant · Prof. Yiyu Shi</p>
+                <ul>
+                  <li>Used transfer learning to speed up neural architecture search (NAS) by about 3× and explored reinforcement-learning-based NAS for binary neural networks.</li>
+                  <li>Worked with EdgeCortix to accelerate MobileNet on FPGA using Vitis HLS and Python, improving performance through pipelining and fewer memory writes.</li>
+                  <li>Developed a contrastive-learning model for RGB-D image classification that achieved state-of-the-art results on SUN-RGBD and Washington RGB-D.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-date">2019.08 – 2019.10</div>
+              <div class="timeline-body">
+                <h3>Software Department, Cambricon Technologies</h3>
+                <p class="role">Software Intern</p>
+                <ul>
+                  <li>Deployed ResNet-50 and Inception-v3 on the MLU100 AI accelerator and implemented vector operations in BangC.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-date">2019.05 – 2019.08</div>
+              <div class="timeline-body">
+                <h3>School of Information and Electronics, Beijing Institute of Technology</h3>
+                <p class="role">Undergraduate Intern · Assoc. Prof. Zhijie Ding</p>
+                <ul>
+                  <li>Led model training and architecture search for an FPGA-based license plate recognition system that won national second prize in the ARM Cup.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-date">2018.08 – 2019.07</div>
+              <div class="timeline-body">
+                <h3>Institute of Microelectronics, Tsinghua University</h3>
+                <p class="role">Research Assistant · Prof. Shouyi Yin</p>
+                <ul>
+                  <li>Helped design cache access for a CGRA reconfigurable processing unit, fixed critical bugs, and built UART and APB interfaces.</li>
+                  <li>Proposed a network-on-chip memory design for the processing unit that increased memory bandwidth by about 10×.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section-band muted" id="publications">
+        <div class="container">
+          <div class="section-head">
+            <h2>Selected publications</h2>
+          </div>
+          <ol class="publication-list reveal">
+            <li class="publication">
+              <div class="pub-venue">ISQED 2025</div>
+              <div>
+                <h3>
+                  <a href="https://arxiv.org/abs/2502.00028" target="_blank" rel="noreferrer">
+                    VRank: Enhancing Verilog Code Generation from Large Language Models via Self-Consistency
+                  </a>
+                </h3>
+                <p class="pub-authors">Zhuorui Zhao, Ruidi Qiu, Ing-Chao Lin, Grace Li Zhang, Bing Li, Ulf Schlichtmann</p>
+                <p class="pub-note">Best Paper Award</p>
+              </div>
+            </li>
+            <li class="publication">
+              <div class="pub-venue">SOCC 2025</div>
+              <div>
+                <h3>
+                  <a href="https://arxiv.org/abs/2511.02285" target="_blank" rel="noreferrer">
+                    VFocus: Better Verilog Generation from Large Language Model via Focused Reasoning
+                  </a>
+                </h3>
+                <p class="pub-authors">Zhuorui Zhao, Bing Li, Grace Li Zhang, Ulf Schlichtmann</p>
+              </div>
+            </li>
+            <li class="publication">
+              <div class="pub-venue">DAC 2026</div>
+              <div>
+                <h3>
+                  <a
+                    href="https://63dac.conference-program.com/?post_type=page&p=16&id=RESEARCH1858&sess=sess166"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    ReflectBench: An Agentic Framework for Generating System-Level Design Testbench via Consensus and Reflection
+                  </a>
+                </h3>
+                <p class="pub-authors">Junzhe Liu, Chao Li, Puyuan Zhang, Jinheng Wang, Xiaowei Chen, Zhuorui Zhao, et al.</p>
+                <p class="pub-note">Accepted</p>
+              </div>
+            </li>
+            <li class="publication">
+              <div class="pub-venue">NeurIPS Workshop 2026</div>
+              <div>
+                <h3>
+                  <a href="https://arxiv.org/abs/2607.24854" target="_blank" rel="noreferrer">
+                    VClare: Resolving Imperfect Specifications in LLM-Based Verilog Generation
+                  </a>
+                </h3>
+                <p class="pub-authors">Zhuorui Zhao, Bing Li, Yu Li, Zheyu Yan, Ulf Schlichtmann</p>
+                <p class="pub-note">Accepted</p>
+              </div>
+            </li>
+            <li class="publication">
+              <div class="pub-venue">SOCC 2025</div>
+              <div>
+                <h3>
+                  <a href="https://arxiv.org/abs/2508.20030" target="_blank" rel="noreferrer">
+                    Large Language Models (LLMs) for Electronic Design Automation (EDA): Special Session Paper
+                  </a>
+                </h3>
+                <p class="pub-authors">Kangwei Xu, Denis Schwachhofer, Jason Blocklove, Ilia Polian, Peter Domanski, Dirk Pflüger, Siddharth Garg, Ramesh Karri, Ozgur Sinanoglu, Johann Knechtel, Zhuorui Zhao, Ulf Schlichtmann, Bing Li</p>
+              </div>
+            </li>
+            <li class="publication">
+              <div class="pub-venue">arXiv 2024</div>
+              <div>
+                <h3>
+                  <a href="https://arxiv.org/abs/2410.18582" target="_blank" rel="noreferrer">
+                    LLM-Aided Efficient Hardware Design Automation
+                  </a>
+                </h3>
+                <p class="pub-authors">Kangwei Xu, Ruidi Qiu, Zhuorui Zhao, Grace Li Zhang, Bing Li, Ulf Schlichtmann</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section-band" id="awards">
+        <div class="container section-grid">
+          <div>
+            <h2>Selected awards</h2>
+          </div>
+          <ul class="award-list reveal">
+            <li><span>2025</span> ISQED Best Paper Award</li>
+            <li><span>2020</span> Outstanding Graduate, Beijing Institute of Technology and Beijing Municipality</li>
+            <li><span>2019</span> National Second Prize, ARM Cup, National Undergraduate Integrated Circuit Innovation and Entrepreneurship Competition</li>
+            <li><span>2019</span> North China Regional Second Prize, National Undergraduate Integrated Circuit Innovation and Entrepreneurship Competition</li>
+            <li><span>2017</span> Beijing Regional First Prize, Group A, China Undergraduate Mathematical Contest in Modeling</li>
+            <li><span>2017–2019</span> Multiple first- and second-class undergraduate merit scholarships, Beijing Institute of Technology</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-band muted" id="skills">
+        <div class="container">
+          <div class="section-head">
+            <h2>Skills and languages</h2>
+          </div>
+          <div class="skills-grid reveal">
+            <div>
+              <h3>Programming and tools</h3>
+              <p>Python · C · C++ · MATLAB · Verilog · Vitis HLS · Vivado · LLM agent development</p>
+            </div>
+            <div>
+              <h3>Languages</h3>
+              <p>CET-4 649 (Speaking: A)· CET-6 609 (Speaking: A)· TOEFL 110</p>
+            </div>
+            <div>
+              <h3>Leadership and interests</h3>
+              <p>Former class representative and choir tenor section leader. Piano performance and musical arrangement.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band contact-band" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <h2>Get in touch</h2>
+            <p class="contact-copy">
+              I welcome conversations about LLM agents, Verilog generation, hardware verification, and EDA automation.
+            </p>
+          </div>
+          <ul class="contact-list">
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+              <a href="mailto:zhuorui.zhao@tum.de">zhuorui.zhao@tum.de</a>
+            </li>
+            <li>
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              <span>WeChat: TimRayZhao</span>
+            </li>
+            <li>
+              <i data-lucide="github" aria-hidden="true"></i>
+              <a href="https://github.com/TimrayZ" target="_blank" rel="noreferrer">github.com/TimrayZ</a>
+            </li>
+          </ul>
+          <div class="contact-actions">
+            <a class="button primary" href="assets/Zhuorui_Zhao_CV_EN.pdf" target="_blank" rel="noreferrer">
+              <i data-lucide="file-text" aria-hidden="true"></i>
+              2-page CV (English)
+            </a>
+            <a class="button ghost" href="assets/Zhuorui_Zhao_CV_1page.pdf" target="_blank" rel="noreferrer">
+              <i data-lucide="file" aria-hidden="true"></i>
+              1-page CV (Chinese)
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Zhuorui Zhao</p>
+        <p>Built for GitHub Pages</p>
+      </div>
+    </footer>
+  </body>
+</html>
