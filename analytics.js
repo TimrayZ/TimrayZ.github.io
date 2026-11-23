@@ -1,7 +1,6 @@
 (() => {
-  // Set this to the /count endpoint from the owner's GoatCounter dashboard.
   // Both language versions use this one endpoint and share visitor statistics.
-  const endpoint = "";
+  const endpoint = "https://timrayz.goatcounter.com/count";
 
   if (!endpoint || window.location.hostname !== "timrayz.github.io") {
     return;

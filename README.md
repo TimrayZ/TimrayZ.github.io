@@ -24,10 +24,9 @@ Then visit `http://localhost:8000`.
 
 ## Visitor analytics
 
-Both pages load `analytics.js` and share one GoatCounter site. Set its `endpoint`
-to the public `https://YOUR-ACCOUNT.goatcounter.com/count` URL from the owner's
-dashboard after registering the account. Until then, analytics is inactive and
-does not load the third-party script.
+Both pages load `analytics.js` and share the GoatCounter site at
+https://timrayz.goatcounter.com/. The public endpoint is configured in
+`analytics.js`; dashboard access requires the owner's login.
 
 The dashboard combines traffic from both languages. Page paths `/` and `/en.html`
 allow separate page reports. `/index.html` is counted as `/`, and query parameters
