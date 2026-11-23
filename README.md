@@ -21,3 +21,20 @@ python -m http.server 8000
 ```
 
 Then visit `http://localhost:8000`.
+
+## Visitor analytics
+
+Both pages load `analytics.js` and share one GoatCounter site. Set its `endpoint`
+to the public `https://YOUR-ACCOUNT.goatcounter.com/count` URL from the owner's
+dashboard after registering the account. Until then, analytics is inactive and
+does not load the third-party script.
+
+The dashboard combines traffic from both languages. Page paths `/` and `/en.html`
+allow separate page reports. `/index.html` is counted as `/`, and query parameters
+and section anchors are excluded from page names. Local previews are excluded.
+Unique visitors are estimated by GoatCounter, so page-level unique counts should
+not be added to calculate the site total. Full visitor IPs are not stored by
+GoatCounter.
+
+Setup and privacy details are available at https://www.goatcounter.com/help/start
+and https://www.goatcounter.com/help/privacy.
